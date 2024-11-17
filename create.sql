@@ -14,11 +14,24 @@ CREATE TABLE users (
 -- Tạo bảng products
 CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    description TEXT,
-    price DECIMAL(10, 2) NOT NULL,
-    stock INT NOT NULL,
-    image VARCHAR(255)
+    name VARCHAR(255),
+    company VARCHAR(100),
+    img VARCHAR(255),
+    price DECIMAL(15, 2),
+    star INT,
+    rate_count INT,
+    promo_name VARCHAR(50),
+    promo_value VARCHAR(50),
+    screen VARCHAR(100),
+    os VARCHAR(50),
+    camara VARCHAR(50),
+    camara_front VARCHAR(50),
+    cpu VARCHAR(100),
+    ram VARCHAR(20),
+    rom VARCHAR(20),
+    micro_usb VARCHAR(100),
+    battery VARCHAR(50),
+    masp VARCHAR(20)
 );
 
 -- Tạo bảng cart
